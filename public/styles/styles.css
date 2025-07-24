@@ -1,0 +1,29 @@
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #212529, #2f5d80);
+    
+}
+p, h1 {
+    color: white;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeMessage {
+    right: 50%;
+}
+
+#typing-text {
+    font-family: 'Courier New', Courier, monospace;
+}

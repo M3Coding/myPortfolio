@@ -1,0 +1,62 @@
+<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/styles.css">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+     
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a
+          class="nav-link fw-bold py-1 active pr-3"
+          aria-current="page"
+          href="/login"
+          >LOGIN</a
+        >
+        <a class="nav-link fw-bold py-1 px-0" href="/signUp">SIGN UP</a>
+      </nav>
+    </div>
+  </header>
+  <div class="d-flex align-items-center justify-content-end vh-100">
+  <div class="px-3 welcomeMessage" style="width: 600px; margin-left: auto; margin-right: 10%;">
+    <h1 class="text-end">MENtality MEN-Talk</h1>
+    <p class="lead " id="typing-text"> </p>
+    <p class="lead text-end">
+      <a href="/blog" class="btn btn-lg btn-light fw-bold border-white bg-white">Vibe Check👈</a>
+    </p>
+  </div>
+</div>
+<script>
+    const textToType = "Welcome MENtality MEN-Talk! Here, strength isn’t just measured by muscle, but by the courage to speak, feel, and heal! Click below for a vibe check!";
+
+  const typingElement = document.getElementById("typing-text");
+  let charIndex = 0;
+  const typingSpeed = 100; // milliseconds per character
+  const delayBeforeRestart = 1500; // delay before restarting the loop
+
+  function typeWriter() {
+    if (charIndex < textToType.length) {
+      typingElement.textContent += textToType.charAt(charIndex);
+      charIndex++;
+      setTimeout(typeWriter, typingSpeed);
+    } else {
+      // After typing finishes, pause, then restart
+      setTimeout(() => {
+        typingElement.textContent = "";
+        charIndex = 0;
+        typeWriter();
+      }, delayBeforeRestart);
+    }
+  }
+
+  window.onload = typeWriter();
+</script>
+  <footer class="mt-auto text-white-50">
+    <p>
+      © <%= new Date().getFullYear();%> MENtality MENtalk, Inc
+    </p>
+  </footer>
+</div>
