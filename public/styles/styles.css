@@ -2,7 +2,7 @@
 body {
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom, #212529, #2f5d80);
+    background: #7d7168;
     
 }
 .homepageImage {
@@ -41,4 +41,14 @@ h1 {
 
 #typing-text {
     font-family: 'Courier New', Courier, monospace;
+}
+.btn {
+    background-color:#f4623a !important;
+    color: white;
+    border-color: #f4623a !important;
+}
+
+.btn:hover {
+    opacity: 80%;
+    color: white;
 }
