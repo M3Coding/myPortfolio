@@ -18,6 +18,9 @@ app.get("/home", (req, res) => {
 app.get("/resume", (req, res) => {
     res.render("resume.ejs");
 })
+app.get("/privacy", (req, res) => {
+    res.render("privacy.ejs");
+})
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 })
