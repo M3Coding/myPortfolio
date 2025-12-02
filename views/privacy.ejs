@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Life Corp. Privacy Policy</title>
-</head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Privacy Policy</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/styles/home.css" rel="stylesheet" />
+    </head>
 <body>
     <div>
         <div><a href="/home"><img src="/images/CodingLifeCorp_Logo.png" alt="" width="300" height="300"></a></div>
@@ -86,10 +99,44 @@ Coding Life Corp<br>
                 </li>
             </ol>
         </div>
+
+        <h4 style="display:flex; align-items: center; justify-content: center;">Subscribe to Coding 4 Life Corp.</h4>
+
+        <div class="form" style="display:flex; align-items: center; justify-content: center;">
+        <form action="/sms_policy" style="margin: 5px;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name..." style="margin: 5px;"><br>
+            <label for="email">Email: </label>
+            <input type="email" placeholder="example@example.com" style="margin: 5px;"><br>
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="123456789" style="margin: 5px;"><br>
+            <input type="radio">
+            <i style="margin: 10px;">Click to Opt-in receiving SMS updates from Coding 4 Life Corp.</i>
+            <br>
+            <input type="submit">
+            
+        </form>
+    </div>
+
+        
     </div>
 
     
 </body>
+<footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">© <%= new Date().getFullYear();%> Coding4Life Corp.</div></div>
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted"><a href="/privacy"><i>Privacy Policy</i></a></div></div>
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/public/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </html>
 
 
