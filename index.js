@@ -27,7 +27,7 @@ app.get("/home", (req, res) => {
 })
 
 app.get("/thank-you", (req, res) => {
-    res.send("Your appointment request has been sent successfully!")
+    res.send("Your request has been sent successfully!")
 })
 app.get("/resume", (req, res) => {
     res.render("resume.ejs");
